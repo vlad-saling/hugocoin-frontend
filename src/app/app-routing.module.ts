@@ -1,7 +1,11 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { BlockchainService } from './services/blockchain.service';
+import { BlockchainViewerComponent } from './pages/blockchain-viewer/blockchain-viewer.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {path:'',component:BlockchainViewerComponent}
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
