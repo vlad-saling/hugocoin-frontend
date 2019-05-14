@@ -13,11 +13,13 @@ export class BlockchainViewerComponent implements OnInit {
   constructor(private blockchainService: BlockchainService) {
     this.blocks = blockchainService.getBlocks();
     this.selectedBlock = this.blocks[0];
+    console.log(this.blocks);
   }
 
   ngOnInit() {
   }
   showTransactions(block) {
     this.selectedBlock = block;
+    console.log('show transactions');
   }
 }

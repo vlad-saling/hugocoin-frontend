@@ -25,11 +25,11 @@
         </span>
       </td>
       <td class="text-truncate" style="max-width: 100px;">
-          <a [routerLink]="['/wallet', tx.toAddress]">{{tx.toAddress}}</a>
+        <a [routerLink]="['/wallet', tx.toAddress]">{{tx.toAddress}}</a>
 
-          <span class="text-muted" *ngIf="blockchainService.addressIsFromCurrentUser(tx.toAddress)">
-            <br><small>(That's yours!)</small>
-          </span>
+        <span class="text-muted" *ngIf="blockchainService.addressIsFromCurrentUser(tx.toAddress)">
+          <br><small>(That's yours!)</small>
+        </span>
       </td>
       <td>
         {{tx.amount}}
